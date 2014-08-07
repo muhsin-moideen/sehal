@@ -2,11 +2,9 @@ package com.awesome.sehal;
 
 
 
-import android.R.string;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.text.Editable;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -15,7 +13,7 @@ import android.widget.EditText;
 public class MainActivity extends Activity implements OnClickListener{
 
 	//DECLARING VARIABLES
-		Button nine,eig,sev,six,fiv,four,thr,two,one,zero,dot,plus,mins,div,mul,eq,cl,perc,nxt;
+		Button nine,eig,sev,six,fiv,four,thr,two,one,zero,dot,plus,mins,div,mul,eq,cl,perc;
 	    EditText et;
 	    String s = " ";
 	    float result = 0;
@@ -48,7 +46,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	        cl=(Button)findViewById(R.id.buttonclear);
 	        perc=(Button)findViewById(R.id.buttonpercentage);
 	        et=(EditText)findViewById(R.id.editText1);
-	        nxt=(Button)findViewById(R.id.btn);
+	        
 	        
 	        
 	        
@@ -73,7 +71,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	        et.setOnClickListener(this);
 	        zero.setOnClickListener(this);
 	        perc.setOnClickListener(this);
-	        nxt.setOnClickListener(this);
+	       
 		}
 
 		@Override
@@ -226,7 +224,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	            	if(s.equals(".789"))
 	            	{
 	            		et.setText("0000");
-	            		Intent newIntent=new Intent(MainActivity.this,MainActivity2.class);
+	            		Intent newIntent=new Intent(this,MainActivity2.class);
 	            		startActivity(newIntent);
 	            	}
 	            	if(fl!=1)
@@ -285,18 +283,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	            	fl=0;
 	            	break;
 	            	
-	            case R.id.btn:
-	            	float code = Float.parseFloat(s);
-	            	
-	            	if(code==789)
-	            	{
-	            		setContentView(R.layout.sa);
-	            	}
-	            	else
-	            	{
-	            		et.setText("INVALID CODE");
-	            	}
-	            	break;
+	           
 	        }
 		}
 		

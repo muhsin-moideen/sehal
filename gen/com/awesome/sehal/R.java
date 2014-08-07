@@ -45,9 +45,8 @@ public final class R {
         public static final int zero=0x7f020014;
     }
     public static final class id {
-        public static final int action_settings=0x7f080015;
-        public static final int btn=0x7f080013;
-        public static final int button1=0x7f080014;
+        public static final int action_settings=0x7f080014;
+        public static final int button1=0x7f080013;
         public static final int buttonadd=0x7f08000f;
         public static final int buttonclear=0x7f080005;
         public static final int buttondiv=0x7f080004;

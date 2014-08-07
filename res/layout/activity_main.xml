@@ -132,7 +132,7 @@
         android:textColorHint="#ffffff"
         android:textSize="60sp" >
 
-        <requestFocus />
+       
     </EditText>
 
     <Button
@@ -175,15 +175,5 @@
         android:layout_below="@+id/editText1"
         android:layout_toRightOf="@+id/buttoneight"
         android:background="@drawable/per" />
-
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
-        android:layout_toRightOf="@+id/buttonclear"
-        android:background="#ff0000"
-        android:minHeight="61dip"
-        android:minWidth="80dip" />
 
 </RelativeLayout>
